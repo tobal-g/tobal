@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import WaveField from "../components/WaveField.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer.astro";
+
+const showWaveField = import.meta.env.PUBLIC_WAVE_FIELD !== "false";
+---
+
+<Base>
+  {showWaveField && <WaveField />}
+  <main>
+    <Hero />
+    <About />
+    <Experience />
+    <Footer />
+  </main>
+</Base>

@@ -1,0 +1,24 @@
+---
+---
+
+<canvas id="dot-grid" aria-hidden="true"></canvas>
+
+<script>
+  import { initDotGrid } from "../scripts/dot-grid";
+
+  const canvas = document.getElementById("dot-grid") as HTMLCanvasElement;
+  if (canvas) {
+    initDotGrid(canvas);
+  }
+</script>
+
+<style>
+  canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    z-index: 0;
+  }
+</style>
