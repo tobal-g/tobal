@@ -1,0 +1,31 @@
+---
+---
+
+<section class="section container">
+  <p class="section-label">[ FAVORITE BOOKS ]</p>
+
+  <ul class="books">
+    <li>Steve Jobs <span class="author">— Isaacson</span></li>
+    <li>The Innovator's Dilemma <span class="author">— Christensen</span></li>
+    <li>A Brief History of Time <span class="author">— Hawking</span></li>
+    <li>Man's Search for Meaning <span class="author">— Frankl</span></li>
+  </ul>
+</section>
+
+<style>
+  .books {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .books li {
+    color: var(--text);
+    font-size: var(--text-sm);
+  }
+
+  .author {
+    color: var(--text-tertiary);
+  }
+</style>

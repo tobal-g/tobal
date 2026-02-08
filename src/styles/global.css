@@ -93,6 +93,7 @@ h1 {
 
 p {
   max-width: 65ch;
+  text-wrap: pretty;
 }
 
 /* ===========================
